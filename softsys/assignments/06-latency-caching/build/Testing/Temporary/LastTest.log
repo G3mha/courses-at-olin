@@ -1,0 +1,96 @@
+Start testing: Mar 12 11:56 EDT
+----------------------------------------------------------
+1/2 Testing: test_cache
+1/2 Test: test_cache
+Command: "/Users/enriccogemha/Developer/softsys-2025-01/assignments/06-latency-caching/build/test/test_cache" "--verbose" "-j1"
+Directory: /Users/enriccogemha/Developer/softsys-2025-01/assignments/06-latency-caching/build/test
+"test_cache" start time: Mar 12 11:56 EDT
+Output:
+----------------------------------------------------------
+[----] Criterion v2.4.2
+[====] Running 4 tests from get_line_index:
+[RUN ] get_line_index::higher_bytes
+[PASS] get_line_index::higher_bytes: (0.00s)
+[RUN ] get_line_index::highest_bytes
+[PASS] get_line_index::highest_bytes: (0.00s)
+[RUN ] get_line_index::lower_bytes
+[PASS] get_line_index::lower_bytes: (0.00s)
+[RUN ] get_line_index::lowest_bytes
+[PASS] get_line_index::lowest_bytes: (0.00s)
+[====] Running 4 tests from get_line_offset:
+[RUN ] get_line_offset::all_bytes
+[PASS] get_line_offset::all_bytes: (0.00s)
+[RUN ] get_line_offset::lower_half
+[PASS] get_line_offset::lower_half: (0.00s)
+[RUN ] get_line_offset::lower_quarter
+[PASS] get_line_offset::lower_quarter: (0.00s)
+[RUN ] get_line_offset::lower_three_quarters
+[PASS] get_line_offset::lower_three_quarters: (0.00s)
+[====] Running 4 tests from get_tag:
+[RUN ] get_tag::all_bytes
+[PASS] get_tag::all_bytes: (0.00s)
+[RUN ] get_tag::upper_half
+[PASS] get_tag::upper_half: (0.00s)
+[RUN ] get_tag::upper_quarter
+[PASS] get_tag::upper_quarter: (0.00s)
+[RUN ] get_tag::upper_three_quarters
+[PASS] get_tag::upper_three_quarters: (0.00s)
+[====] Running 1 test from load:
+[RUN ] load::read_value
+[PASS] load::read_value: (0.00s)
+[====] Running 1 test from make_line:
+[RUN ] make_line::line_invalid
+[PASS] make_line::line_invalid: (0.00s)
+[====] Running 1 test from store:
+[RUN ] store::write_new_value
+[PASS] store::write_new_value: (0.00s)
+[====] Synthesis: Tested: 15 | Passing: 15 | Failing: 0 | Crashing: 0 
+<end of output>
+Test time =   0.29 sec
+----------------------------------------------------------
+Test Passed.
+"test_cache" end time: Mar 12 11:56 EDT
+"test_cache" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/2 Testing: test_transpose
+2/2 Test: test_transpose
+Command: "/Users/enriccogemha/Developer/softsys-2025-01/assignments/06-latency-caching/build/test/test_transpose" "--verbose" "-j1"
+Directory: /Users/enriccogemha/Developer/softsys-2025-01/assignments/06-latency-caching/build/test
+"test_transpose" start time: Mar 12 11:56 EDT
+Output:
+----------------------------------------------------------
+[----] Criterion v2.4.2
+[====] Running 2 tests from is_transpose:
+[RUN ] is_transpose::reference
+[PASS] is_transpose::reference: (0.00s)
+[RUN ] is_transpose::test
+[PASS] is_transpose::test: (0.00s)
+[====] Running 1 test from make_random_matrix:
+[RUN ] make_random_matrix::small
+[PASS] make_random_matrix::small: (0.00s)
+[====] Running 3 tests from transpose:
+[RUN ] transpose::better_than_reference
+[PASS] transpose::better_than_reference: (0.00s)
+[RUN ] transpose::extra_credit
+[----] ../test/test_transpose.c:135: Assertion Failed
+[----]   
+[----]   IGNORE THIS FAILURE
+[----]   
+[----] ../test/test_transpose.c:136: Assertion Failed
+[----]   
+[----]   Extra credit: 3 points
+[----]   
+[FAIL] transpose::extra_credit: (0.00s)
+[RUN ] transpose::significant_improvement
+[PASS] transpose::significant_improvement: (0.00s)
+[====] Synthesis: Tested: 6 | Passing: 5 | Failing: 1 | Crashing: 0 
+<end of output>
+Test time =   0.14 sec
+----------------------------------------------------------
+Test Failed.
+"test_transpose" end time: Mar 12 11:56 EDT
+"test_transpose" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Mar 12 11:56 EDT

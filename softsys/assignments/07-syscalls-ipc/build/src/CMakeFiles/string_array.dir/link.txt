@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc libstring_array.a CMakeFiles/string_array.dir/string_array.c.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib libstring_array.a

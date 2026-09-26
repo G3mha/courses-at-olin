@@ -1,0 +1,107 @@
+Start testing: Mar 28 11:48 EDT
+----------------------------------------------------------
+1/2 Testing: test_string_array
+1/2 Test: test_string_array
+Command: "/Users/enriccogemha/Developer/softsys-2025-01/assignments/07-syscalls-ipc/build/test/test_string_array" "--verbose" "-j1"
+Directory: /Users/enriccogemha/Developer/softsys-2025-01/assignments/07-syscalls-ipc/build/test
+"test_string_array" start time: Mar 28 11:48 EDT
+Output:
+----------------------------------------------------------
+[----] Criterion v2.4.2
+[====] Running 4 tests from add_string:
+[RUN ] add_string::add_doubles_nonzero_capacity
+[PASS] add_string::add_doubles_nonzero_capacity: (0.00s)
+[RUN ] add_string::add_increases_size
+[PASS] add_string::add_increases_size: (0.00s)
+[RUN ] add_string::add_increments_zero_capacity
+[PASS] add_string::add_increments_zero_capacity: (0.00s)
+[RUN ] add_string::add_moves_sentinel_pointer
+[PASS] add_string::add_moves_sentinel_pointer: (0.00s)
+[====] Running 5 tests from make_string_array:
+[RUN ] make_string_array::create_with_nonzero_capacity
+[PASS] make_string_array::create_with_nonzero_capacity: (0.00s)
+[RUN ] make_string_array::create_with_zero_capacity
+[PASS] make_string_array::create_with_zero_capacity: (0.00s)
+[RUN ] make_string_array::created_with_zero_size
+[PASS] make_string_array::created_with_zero_size: (0.00s)
+[RUN ] make_string_array::sentinel_pointer_nonzero_capacity
+[PASS] make_string_array::sentinel_pointer_nonzero_capacity: (0.00s)
+[RUN ] make_string_array::sentinel_pointer_zero_capacity
+[PASS] make_string_array::sentinel_pointer_zero_capacity: (0.00s)
+[====] Running 5 tests from resize:
+[RUN ] resize::grow_increases_capacity
+[PASS] resize::grow_increases_capacity: (0.00s)
+[RUN ] resize::grow_preserves_size
+[PASS] resize::grow_preserves_size: (0.00s)
+[RUN ] resize::shrink_decreases_capacity
+[PASS] resize::shrink_decreases_capacity: (0.00s)
+[RUN ] resize::shrink_decreases_size
+[PASS] resize::shrink_decreases_size: (0.00s)
+[RUN ] resize::shrink_moves_sentinel_pointer
+[PASS] resize::shrink_moves_sentinel_pointer: (0.00s)
+[====] Synthesis: Tested: 14 | Passing: 14 | Failing: 0 | Crashing: 0 
+<end of output>
+Test time =   0.22 sec
+----------------------------------------------------------
+Test Passed.
+"test_string_array" end time: Mar 28 11:48 EDT
+"test_string_array" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/2 Testing: test_shell
+2/2 Test: test_shell
+Command: "/Users/enriccogemha/Developer/softsys-2025-01/assignments/07-syscalls-ipc/build/test/test_shell" "--verbose" "-j1"
+Directory: /Users/enriccogemha/Developer/softsys-2025-01/assignments/07-syscalls-ipc/build/test
+"test_shell" start time: Mar 28 11:48 EDT
+Output:
+----------------------------------------------------------
+[----] Criterion v2.4.2
+[====] Running 2 tests from make_command:
+[RUN ] make_command::empty_tokens_array
+[PASS] make_command::empty_tokens_array: (0.00s)
+[RUN ] make_command::null_io_file
+[PASS] make_command::null_io_file: (0.00s)
+[====] Running 3 tests from process_command:
+[RUN ] process_command::input_redirection
+[----] Temporary input file: /tmp/ifile0I20K2
+[PASS] process_command::input_redirection: (0.00s)
+[RUN ] process_command::no_redirection
+[PASS] process_command::no_redirection: (0.00s)
+[RUN ] process_command::output_redirection
+[----] Temporary output file: /tmp/ofile8M6lrA
+[PASS] process_command::output_redirection: (0.00s)
+[====] Running 8 tests from process_tokens:
+[RUN ] process_tokens::input_redirect_beginning
+[PASS] process_tokens::input_redirect_beginning: (0.00s)
+[RUN ] process_tokens::input_redirect_end
+[PASS] process_tokens::input_redirect_end: (0.00s)
+[RUN ] process_tokens::input_redirect_middle
+[PASS] process_tokens::input_redirect_middle: (0.00s)
+[RUN ] process_tokens::no_redirection
+[PASS] process_tokens::no_redirection: (0.00s)
+[RUN ] process_tokens::output_redirect_beginning
+[PASS] process_tokens::output_redirect_beginning: (0.00s)
+[RUN ] process_tokens::output_redirect_end
+[PASS] process_tokens::output_redirect_end: (0.00s)
+[RUN ] process_tokens::output_redirect_middle
+[PASS] process_tokens::output_redirect_middle: (0.00s)
+[RUN ] process_tokens::tokens_with_redirection
+[PASS] process_tokens::tokens_with_redirection: (0.00s)
+[====] Running 1 test from read_line:
+[RUN ] read_line::input_line_read
+[PASS] read_line::input_line_read: (0.00s)
+[====] Running 2 tests from tokenize_line:
+[RUN ] tokenize_line::correct_size
+[PASS] tokenize_line::correct_size: (0.00s)
+[RUN ] tokenize_line::correct_tokens
+[PASS] tokenize_line::correct_tokens: (0.00s)
+[====] Synthesis: Tested: 16 | Passing: 16 | Failing: 0 | Crashing: 0 
+<end of output>
+Test time =   0.20 sec
+----------------------------------------------------------
+Test Passed.
+"test_shell" end time: Mar 28 11:48 EDT
+"test_shell" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Mar 28 11:48 EDT

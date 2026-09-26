@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc libstring_utils.a CMakeFiles/string_utils.dir/string_utils.c.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib libstring_utils.a

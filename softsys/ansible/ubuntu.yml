@@ -1,0 +1,139 @@
+---
+- name: Set up machine for SoftSys
+  hosts: 127.0.0.1
+  connection: local
+  vars:
+    # Path where Docker's ASCII-armored GPG key will be saved.
+    docker_key_download_path: /tmp/docker.asc
+    # Path where the dearmored, apt-compatible key will be saved.
+    docker_keyring_path: /etc/apt/keyrings/docker.gpg
+    act_install_script_path: /tmp/act.sh
+  tasks:
+    - name: Install necessary packages
+      become: true
+      ansible.builtin.apt:
+        name:
+          - gcc
+          - g++
+          - gdb
+          - make
+          - cmake
+          - clang-format
+          - clang-tidy
+          - libcriterion-dev
+          - valgrind
+          - file
+    - name: Install Prettier (npm)
+      block:
+        - name: Install curl
+          become: true
+          ansible.builtin.apt:
+            name: curl
+        - name: Install nvm
+          ansible.builtin.shell: >-
+            curl -o-
+            https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh
+            | bash
+          args:
+            creates: "{{ ansible_env.HOME }}/.nvm/nvm.sh"
+        - name: Install node
+          ansible.builtin.shell:
+            cmd: >-
+              source {{ ansible_env.HOME }}/.nvm/nvm.sh && nvm install node
+              && npm install -g prettier
+          args:
+            executable: /usr/bin/bash
+    - name: Install VSCode extensions
+      ansible.builtin.shell: code --install-extension {{ item }}
+      loop:
+        - esbenp.prettier-vscode
+        - ms-vscode-remote.remote-containers
+        - ms-vscode.cpptools
+        - ms-vscode.cpptools-extension-pack
+        - ms-vscode.cpptools-themes
+        - xaver.clang-format
+        - twxs.cmake
+        - ms-vscode.cmake-tools
+        - ms-azuretools.vscode-docker
+        - ms-vscode-remote.remote-ssh
+        - ms-vscode-remote.remote-ssh-edit
+        - ms-vscode.remote-explorer
+    - name: Install Docker
+      block:
+        - name: Ensure all packages are up to date
+          become: true
+          ansible.builtin.apt:
+            force_apt_get: true
+            update_cache: true
+            upgrade: dist
+        - name: Install dependencies for Docker
+          become: true
+          ansible.builtin.apt:
+            name:
+              - ca-certificates
+              - curl
+              - gnupg
+              - lsb-release
+        - name: Get Docker GPG key needed to add package repo
+          ansible.builtin.get_url:
+            url: https://download.docker.com/linux/ubuntu/gpg
+            dest: "{{ docker_key_download_path }}"
+            force: true
+          when: not ansible_check_mode  # (Bug ansible/ansible#65687)
+          register: download_gpg_key
+        # Docker has the file as an ASCII armored PGP block (starts and ends
+        # with -----BEGIN PGP PUBLIC KEY BLOCK-----), and this needs to be
+        # converted into a binary format before adding it to the set of apt
+        # keyrings.
+        - name: Dearmor GPG key and add to keyring
+          become: true
+          ansible.builtin.command:
+            # The --yes flag ensures that the output keyring is overwritten in
+            # case a new file was downloaded in the previous task.
+            cmd: >-
+              gpg --yes --dearmor -o {{ docker_keyring_path }}
+              {{ docker_key_download_path }}
+          when: download_gpg_key.changed
+        - name: Get architecture name from dpkg (to add the correct apt repo)
+          ansible.builtin.command:
+            cmd: dpkg --print-architecture
+          changed_when: false
+          register: dpkg_arch
+        - name: Add apt repository
+          become: true
+          ansible.builtin.apt_repository:
+            filename: docker
+            repo: >-
+              deb [arch={{ dpkg_arch.stdout }} signed-by={{ docker_keyring_path }}]
+              https://download.docker.com/linux/ubuntu
+              {{ ansible_distribution_release }} stable
+            state: present
+            update_cache: true
+        - name: Install Docker packages
+          become: true
+          ansible.builtin.apt:
+            name:
+              - docker-ce
+              - docker-ce-cli
+              - containerd.io
+              - docker-compose-plugin
+        - name: Add user to docker group
+          become: true
+          ansible.builtin.user:
+            name: "{{ ansible_user_id }}"
+            groups: docker
+            append: true
+    - name: Install Act
+      block:
+        - name: Download Act install script
+          ansible.builtin.get_url:
+            url: https://raw.githubusercontent.com/nektos/act/master/install.sh
+            dest: "{{ act_install_script_path }}"
+        - name: Run Act install script
+          become: true
+          ansible.builtin.script:
+            # It's not great to directly install this to /usr/local/bin, but
+            # this install script is pretty garbage and this is surprisingly the
+            # sanest option for Ubuntu.
+            cmd: "{{ act_install_script_path }} -b /usr/local/bin"
+            executable: bash

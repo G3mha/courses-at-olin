@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="Darwin-g++"
+	BuildStamp="20250130-0657-Experimental"
+	Name="Enriccos-MacBook-Pro.local"
+	Generator="ctest-3.31.4"
+	CompilerName="/usr/bin/g++"
+	CompilerVersion=""
+	OSName="macOS"
+	Hostname="Enriccos-MacBook-Pro.local"
+	OSRelease="15.2"
+	OSVersion="24C101"
+	OSPlatform="arm64"
+	Is64Bits="1"
+	VendorString="Apple"
+	VendorID="Apple"
+	FamilyID="0"
+	ModelID="0"
+	ModelName="Apple M3 Max"
+	ProcessorCacheSize="131072"
+	NumberOfLogicalCPU="14"
+	NumberOfPhysicalCPU="14"
+	TotalVirtualMemory="0"
+	TotalPhysicalMemory="36864"
+	LogicalProcessorsPerPhysical="14"
+	ProcessorClockFrequency="0"
+	>
+	<Testing>
+		<StartDateTime>Jan 30 14:41 EST</StartDateTime>
+		<StartTestTime>1738266085</StartTestTime>
+		<TestList/>
+		<EndDateTime>Jan 30 14:41 EST</EndDateTime>
+		<EndTestTime>1738266085</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

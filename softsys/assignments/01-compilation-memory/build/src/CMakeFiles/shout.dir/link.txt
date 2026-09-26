@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc libshout.a CMakeFiles/shout.dir/shout.c.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib libshout.a

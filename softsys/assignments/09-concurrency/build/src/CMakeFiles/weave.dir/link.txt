@@ -1,0 +1,2 @@
+/usr/bin/ar qc libweave.a CMakeFiles/weave.dir/weave.c.o
+/usr/bin/ranlib libweave.a

@@ -1,0 +1,196 @@
+Start testing: Feb 21 14:21 EST
+----------------------------------------------------------
+1/3 Testing: test_board
+1/3 Test: test_board
+Command: "/Users/enriccogemha/Developer/softsys-2025-01/assignments/03-refactoring-build-structure/build/test/test_board" "--verbose" "-j1"
+Directory: /Users/enriccogemha/Developer/softsys-2025-01/assignments/03-refactoring-build-structure/build/test
+"test_board" start time: Feb 21 14:21 EST
+Output:
+----------------------------------------------------------
+[----] Criterion v2.4.2
+[====] Running 2 tests from get_opposing_player:
+[RUN ] get_opposing_player::o_to_x
+[PASS] get_opposing_player::o_to_x: (0.00s)
+[RUN ] get_opposing_player::x_to_o
+[PASS] get_opposing_player::x_to_o: (0.00s)
+[====] Running 3 tests from is_empty_space:
+[RUN ] is_empty_space::new_board
+[PASS] is_empty_space::new_board: (0.00s)
+[RUN ] is_empty_space::o_not_empty
+[PASS] is_empty_space::o_not_empty: (0.00s)
+[RUN ] is_empty_space::x_not_empty
+[PASS] is_empty_space::x_not_empty: (0.00s)
+[====] Running 3 tests from is_full:
+[RUN ] is_full::empty_board_not_full
+[PASS] is_full::empty_board_not_full: (0.00s)
+[RUN ] is_full::full_board
+[PASS] is_full::full_board: (0.00s)
+[RUN ] is_full::partial_board_not_full
+[PASS] is_full::partial_board_not_full: (0.00s)
+[====] Running 8 tests from is_valid_space:
+[RUN ] is_valid_space::ll_corner
+[PASS] is_valid_space::ll_corner: (0.00s)
+[RUN ] is_valid_space::lr_corner
+[PASS] is_valid_space::lr_corner: (0.00s)
+[RUN ] is_valid_space::too_far_down
+[PASS] is_valid_space::too_far_down: (0.00s)
+[RUN ] is_valid_space::too_far_left
+[PASS] is_valid_space::too_far_left: (0.00s)
+[RUN ] is_valid_space::too_far_right
+[PASS] is_valid_space::too_far_right: (0.00s)
+[RUN ] is_valid_space::too_far_up
+[PASS] is_valid_space::too_far_up: (0.00s)
+[RUN ] is_valid_space::ul_corner
+[PASS] is_valid_space::ul_corner: (0.00s)
+[RUN ] is_valid_space::ur_corner
+[PASS] is_valid_space::ur_corner: (0.00s)
+[====] Running 5 tests from is_win:
+[RUN ] is_win::col_win
+[PASS] is_win::col_win: (0.00s)
+[RUN ] is_win::diag_win
+[PASS] is_win::diag_win: (0.00s)
+[RUN ] is_win::no_win_draw
+[PASS] is_win::no_win_draw: (0.00s)
+[RUN ] is_win::no_win_empty
+[PASS] is_win::no_win_empty: (0.00s)
+[RUN ] is_win::row_win
+[PASS] is_win::row_win: (0.00s)
+[====] Running 3 tests from print_board:
+[RUN ] print_board::empty_board
+[PASS] print_board::empty_board: (0.00s)
+[RUN ] print_board::o_move
+[PASS] print_board::o_move: (0.00s)
+[RUN ] print_board::x_move
+[PASS] print_board::x_move: (0.00s)
+[====] Running 1 test from setup_board:
+[RUN ] setup_board::new_board
+[PASS] setup_board::new_board: (0.00s)
+[====] Synthesis: Tested: 25 | Passing: 25 | Failing: 0 | Crashing: 0 
+<end of output>
+Test time =   0.26 sec
+----------------------------------------------------------
+Test Passed.
+"test_board" end time: Feb 21 14:21 EST
+"test_board" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/3 Testing: test_game_state
+2/3 Test: test_game_state
+Command: "/Users/enriccogemha/Developer/softsys-2025-01/assignments/03-refactoring-build-structure/build/test/test_game_state" "--verbose" "-j1"
+Directory: /Users/enriccogemha/Developer/softsys-2025-01/assignments/03-refactoring-build-structure/build/test
+"test_game_state" start time: Feb 21 14:21 EST
+Output:
+----------------------------------------------------------
+[----] Criterion v2.4.2
+[====] Running 3 tests from game_over:
+[RUN ] game_over::board_full
+[PASS] game_over::board_full: (0.00s)
+[RUN ] game_over::new_game_not_over
+[PASS] game_over::new_game_not_over: (0.00s)
+[RUN ] game_over::player_won
+[PASS] game_over::player_won: (0.00s)
+[====] Running 6 tests from move:
+[RUN ] move::invalid_space_failure
+[PASS] move::invalid_space_failure: (0.00s)
+[RUN ] move::invalid_space_unchanged
+[PASS] move::invalid_space_unchanged: (0.00s)
+[RUN ] move::return_success
+[PASS] move::return_success: (0.00s)
+[RUN ] move::space_full_failure
+[PASS] move::space_full_failure: (0.00s)
+[RUN ] move::space_full_unchanged
+[PASS] move::space_full_unchanged: (0.00s)
+[RUN ] move::update_board
+[PASS] move::update_board: (0.00s)
+[====] Running 3 tests from player_win:
+[RUN ] player_win::current_player_win
+[PASS] player_win::current_player_win: (0.00s)
+[RUN ] player_win::new_state_no_win
+[PASS] player_win::new_state_no_win: (0.00s)
+[RUN ] player_win::opposing_player_win
+[PASS] player_win::opposing_player_win: (0.00s)
+[====] Running 3 tests from setup_state:
+[RUN ] setup_state::no_moves
+[PASS] setup_state::no_moves: (0.00s)
+[RUN ] setup_state::setup_empty_board
+[PASS] setup_state::setup_empty_board: (0.00s)
+[RUN ] setup_state::x_starts
+[PASS] setup_state::x_starts: (0.00s)
+[====] Synthesis: Tested: 15 | Passing: 15 | Failing: 0 | Crashing: 0 
+<end of output>
+Test time =   0.19 sec
+----------------------------------------------------------
+Test Passed.
+"test_game_state" end time: Feb 21 14:21 EST
+"test_game_state" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/3 Testing: test_input
+3/3 Test: test_input
+Command: "/Users/enriccogemha/Developer/softsys-2025-01/assignments/03-refactoring-build-structure/build/test/test_input" "--verbose" "-j1"
+Directory: /Users/enriccogemha/Developer/softsys-2025-01/assignments/03-refactoring-build-structure/build/test
+"test_input" start time: Feb 21 14:21 EST
+Output:
+----------------------------------------------------------
+[----] Criterion v2.4.2
+[====] Running 5 tests from get_user_input:
+[RUN ] get_user_input::invalid_input_failure
+[PASS] get_user_input::invalid_input_failure: (0.00s)
+Enter the row and column number of your desired move:
++---+---+---+
+|0 0|0 1|0 2|
++---+---+---+
+|1 0|1 1|1 2|
++---+---+---+
+|2 0|2 1|2 2|
++---+---+---+
+[RUN ] get_user_input::too_long_input_failure
+[PASS] get_user_input::too_long_input_failure: (0.00s)
+Enter the row and column number of your desired move:
++---+---+---+
+|0 0|0 1|0 2|
++---+---+---+
+|1 0|1 1|1 2|
++---+---+---+
+|2 0|2 1|2 2|
++---+---+---+
+[RUN ] get_user_input::valid_input_success
+[PASS] get_user_input::valid_input_success: (0.00s)
+Enter the row and column number of your desired move:
++---+---+---+
+|0 0|0 1|0 2|
++---+---+---+
+|1 0|1 1|1 2|
++---+---+---+
+|2 0|2 1|2 2|
++---+---+---+
+[RUN ] get_user_input::valid_input_update_space
+[PASS] get_user_input::valid_input_update_space: (0.00s)
+Enter the row and column number of your desired move:
++---+---+---+
+|0 0|0 1|0 2|
++---+---+---+
+|1 0|1 1|1 2|
++---+---+---+
+|2 0|2 1|2 2|
++---+---+---+
+[RUN ] get_user_input::way_too_long_input_failure
+[PASS] get_user_input::way_too_long_input_failure: (0.00s)
+Enter the row and column number of your desired move:
++---+---+---+
+|0 0|0 1|0 2|
++---+---+---+
+|1 0|1 1|1 2|
++---+---+---+
+|2 0|2 1|2 2|
++---+---+---+
+[====] Synthesis: Tested: 5 | Passing: 5 | Failing: 0 | Crashing: 0 
+<end of output>
+Test time =   0.13 sec
+----------------------------------------------------------
+Test Passed.
+"test_input" end time: Feb 21 14:21 EST
+"test_input" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Feb 21 14:21 EST

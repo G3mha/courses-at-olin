@@ -1,0 +1,68 @@
+[
+{
+  "directory": "/Users/enriccogemha/Developer/softsys-2025-01/assignments/00-intro-to-assignments/build/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -Wextra -pedantic -Wconversion -Wdouble-promotion -Wduplicated-branches -Wduplicated-cond -Wimplicit-fallthrough -Wlogical-op -Wmisleading-indentation -Wnull-dereference -Wshadow -Wsign-conversion -Wunreachable-code -Wunused -g -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -o CMakeFiles/hello.dir/hello.c.o -c /Users/enriccogemha/Developer/softsys-2025-01/assignments/00-intro-to-assignments/src/hello.c",
+  "file": "/Users/enriccogemha/Developer/softsys-2025-01/assignments/00-intro-to-assignments/src/hello.c",
+  "output": "src/CMakeFiles/hello.dir/hello.c.o"
+},
+{
+  "directory": "/Users/enriccogemha/Developer/softsys-2025-01/assignments/00-intro-to-assignments/build/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -Wextra -pedantic -Wconversion -Wdouble-promotion -Wduplicated-branches -Wduplicated-cond -Wimplicit-fallthrough -Wlogical-op -Wmisleading-indentation -Wnull-dereference -Wshadow -Wsign-conversion -Wunreachable-code -Wunused -g -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -o CMakeFiles/string_utils.dir/string_utils.c.o -c /Users/enriccogemha/Developer/softsys-2025-01/assignments/00-intro-to-assignments/src/string_utils.c",
+  "file": "/Users/enriccogemha/Developer/softsys-2025-01/assignments/00-intro-to-assignments/src/string_utils.c",
+  "output": "src/CMakeFiles/string_utils.dir/string_utils.c.o"
+},
+{
+  "directory": "/Users/enriccogemha/Developer/softsys-2025-01/assignments/00-intro-to-assignments/build/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -Wextra -pedantic -Wconversion -Wdouble-promotion -Wduplicated-branches -Wduplicated-cond -Wimplicit-fallthrough -Wlogical-op -Wmisleading-indentation -Wnull-dereference -Wshadow -Wsign-conversion -Wunreachable-code -Wunused -g -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -o CMakeFiles/absolute.dir/absolute.c.o -c /Users/enriccogemha/Developer/softsys-2025-01/assignments/00-intro-to-assignments/src/absolute.c",
+  "file": "/Users/enriccogemha/Developer/softsys-2025-01/assignments/00-intro-to-assignments/src/absolute.c",
+  "output": "src/CMakeFiles/absolute.dir/absolute.c.o"
+},
+{
+  "directory": "/Users/enriccogemha/Developer/softsys-2025-01/assignments/00-intro-to-assignments/build/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -Wextra -pedantic -Wconversion -Wdouble-promotion -Wduplicated-branches -Wduplicated-cond -Wimplicit-fallthrough -Wlogical-op -Wmisleading-indentation -Wnull-dereference -Wshadow -Wsign-conversion -Wunreachable-code -Wunused -g -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -o CMakeFiles/greet.dir/greet.c.o -c /Users/enriccogemha/Developer/softsys-2025-01/assignments/00-intro-to-assignments/src/greet.c",
+  "file": "/Users/enriccogemha/Developer/softsys-2025-01/assignments/00-intro-to-assignments/src/greet.c",
+  "output": "src/CMakeFiles/greet.dir/greet.c.o"
+},
+{
+  "directory": "/Users/enriccogemha/Developer/softsys-2025-01/assignments/00-intro-to-assignments/build/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -Wextra -pedantic -Wconversion -Wdouble-promotion -Wduplicated-branches -Wduplicated-cond -Wimplicit-fallthrough -Wlogical-op -Wmisleading-indentation -Wnull-dereference -Wshadow -Wsign-conversion -Wunreachable-code -Wunused -g -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -o CMakeFiles/run_greet.dir/run_greet.c.o -c /Users/enriccogemha/Developer/softsys-2025-01/assignments/00-intro-to-assignments/src/run_greet.c",
+  "file": "/Users/enriccogemha/Developer/softsys-2025-01/assignments/00-intro-to-assignments/src/run_greet.c",
+  "output": "src/CMakeFiles/run_greet.dir/run_greet.c.o"
+},
+{
+  "directory": "/Users/enriccogemha/Developer/softsys-2025-01/assignments/00-intro-to-assignments/build/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -Wextra -pedantic -Wconversion -Wdouble-promotion -Wduplicated-branches -Wduplicated-cond -Wimplicit-fallthrough -Wlogical-op -Wmisleading-indentation -Wnull-dereference -Wshadow -Wsign-conversion -Wunreachable-code -Wunused -g -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -o CMakeFiles/paths.dir/paths.c.o -c /Users/enriccogemha/Developer/softsys-2025-01/assignments/00-intro-to-assignments/src/paths.c",
+  "file": "/Users/enriccogemha/Developer/softsys-2025-01/assignments/00-intro-to-assignments/src/paths.c",
+  "output": "src/CMakeFiles/paths.dir/paths.c.o"
+},
+{
+  "directory": "/Users/enriccogemha/Developer/softsys-2025-01/assignments/00-intro-to-assignments/build/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc   -Wall -Wextra -pedantic -Wconversion -Wdouble-promotion -Wduplicated-branches -Wduplicated-cond -Wimplicit-fallthrough -Wlogical-op -Wmisleading-indentation -Wnull-dereference -Wshadow -Wsign-conversion -Wunreachable-code -Wunused -g -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -o CMakeFiles/run_paths.dir/run_paths.c.o -c /Users/enriccogemha/Developer/softsys-2025-01/assignments/00-intro-to-assignments/src/run_paths.c",
+  "file": "/Users/enriccogemha/Developer/softsys-2025-01/assignments/00-intro-to-assignments/src/run_paths.c",
+  "output": "src/CMakeFiles/run_paths.dir/run_paths.c.o"
+},
+{
+  "directory": "/Users/enriccogemha/Developer/softsys-2025-01/assignments/00-intro-to-assignments/build/test",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/opt/homebrew/include -Wall -Wextra -pedantic -Wconversion -Wdouble-promotion -Wduplicated-branches -Wduplicated-cond -Wimplicit-fallthrough -Wlogical-op -Wmisleading-indentation -Wnull-dereference -Wshadow -Wsign-conversion -Wunreachable-code -Wunused -g -Wno-conversion -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -o CMakeFiles/test_string_utils.dir/test_string_utils.c.o -c /Users/enriccogemha/Developer/softsys-2025-01/assignments/00-intro-to-assignments/test/test_string_utils.c",
+  "file": "/Users/enriccogemha/Developer/softsys-2025-01/assignments/00-intro-to-assignments/test/test_string_utils.c",
+  "output": "test/CMakeFiles/test_string_utils.dir/test_string_utils.c.o"
+},
+{
+  "directory": "/Users/enriccogemha/Developer/softsys-2025-01/assignments/00-intro-to-assignments/build/test",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/opt/homebrew/include -Wall -Wextra -pedantic -Wconversion -Wdouble-promotion -Wduplicated-branches -Wduplicated-cond -Wimplicit-fallthrough -Wlogical-op -Wmisleading-indentation -Wnull-dereference -Wshadow -Wsign-conversion -Wunreachable-code -Wunused -g -Wno-conversion -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -o CMakeFiles/test_absolute.dir/test_absolute.c.o -c /Users/enriccogemha/Developer/softsys-2025-01/assignments/00-intro-to-assignments/test/test_absolute.c",
+  "file": "/Users/enriccogemha/Developer/softsys-2025-01/assignments/00-intro-to-assignments/test/test_absolute.c",
+  "output": "test/CMakeFiles/test_absolute.dir/test_absolute.c.o"
+},
+{
+  "directory": "/Users/enriccogemha/Developer/softsys-2025-01/assignments/00-intro-to-assignments/build/test",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/opt/homebrew/include -Wall -Wextra -pedantic -Wconversion -Wdouble-promotion -Wduplicated-branches -Wduplicated-cond -Wimplicit-fallthrough -Wlogical-op -Wmisleading-indentation -Wnull-dereference -Wshadow -Wsign-conversion -Wunreachable-code -Wunused -g -Wno-conversion -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -o CMakeFiles/test_greet.dir/test_greet.c.o -c /Users/enriccogemha/Developer/softsys-2025-01/assignments/00-intro-to-assignments/test/test_greet.c",
+  "file": "/Users/enriccogemha/Developer/softsys-2025-01/assignments/00-intro-to-assignments/test/test_greet.c",
+  "output": "test/CMakeFiles/test_greet.dir/test_greet.c.o"
+},
+{
+  "directory": "/Users/enriccogemha/Developer/softsys-2025-01/assignments/00-intro-to-assignments/build/test",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/cc  -I/opt/homebrew/include -Wall -Wextra -pedantic -Wconversion -Wdouble-promotion -Wduplicated-branches -Wduplicated-cond -Wimplicit-fallthrough -Wlogical-op -Wmisleading-indentation -Wnull-dereference -Wshadow -Wsign-conversion -Wunreachable-code -Wunused -g -Wno-conversion -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -o CMakeFiles/test_paths.dir/test_paths.c.o -c /Users/enriccogemha/Developer/softsys-2025-01/assignments/00-intro-to-assignments/test/test_paths.c",
+  "file": "/Users/enriccogemha/Developer/softsys-2025-01/assignments/00-intro-to-assignments/test/test_paths.c",
+  "output": "test/CMakeFiles/test_paths.dir/test_paths.c.o"
+}
+]

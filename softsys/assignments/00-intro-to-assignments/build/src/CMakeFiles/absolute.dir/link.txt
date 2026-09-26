@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc libabsolute.a CMakeFiles/absolute.dir/absolute.c.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib libabsolute.a

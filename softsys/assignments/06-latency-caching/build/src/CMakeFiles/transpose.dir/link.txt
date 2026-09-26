@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc libtranspose.a CMakeFiles/transpose.dir/transpose.c.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib libtranspose.a

@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc libtic_tac_toe.a CMakeFiles/tic_tac_toe.dir/tic_tac_toe.c.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib libtic_tac_toe.a

@@ -1,0 +1,7 @@
+---
+Checks: "*,-llvmlibc-restrict-system-libc-headers,-llvm-header-guard,-altera*"
+HeaderFilterRegex: "."
+FormatStyle: google
+CheckOptions:
+  - key: readability-function-cognitive-complexity.IgnoreMacros
+    value: true

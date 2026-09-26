@@ -1,0 +1,26 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/ubuntu
+{
+  "name": "SoftSys Ubuntu",
+
+  "build": {
+    "dockerfile": "./Dockerfile", // Use our custom Dockerfile
+    "context": ".." // Specifies the folder to open in the container
+  },
+
+  "capAdd": ["SYS_PTRACE"],
+
+  "securityOpt": ["seccomp=unconfined"],
+
+  // Install our favorite VS Code extensions
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.cpptools",
+        "ms-vscode.cmake-tools",
+        "xaver.clang-format",
+        "esbenp.prettier-vscode"
+      ]
+    }
+  }
+}

@@ -1,0 +1,64 @@
+Start testing: Apr 06 04:13 UTC
+----------------------------------------------------------
+1/2 Testing: test_util
+1/2 Test: test_util
+Command: "/workspaces/softsys-2025-01/assignments/08-networking/build/test/test_util" "--verbose" "-j1"
+Directory: /workspaces/softsys-2025-01/assignments/08-networking/build/test
+"test_util" start time: Apr 06 04:13 UTC
+Output:
+----------------------------------------------------------
+[----] Criterion v2.4.1
+[====] Running 1 test from close_tcp_socket:
+[RUN ] close_tcp_socket::invalid_after_close
+[PASS] close_tcp_socket::invalid_after_close: (0.00s)
+[====] Running 2 tests from open_tcp_socket:
+[RUN ] open_tcp_socket::valid_descriptor_value
+[PASS] open_tcp_socket::valid_descriptor_value: (0.00s)
+[RUN ] open_tcp_socket::valid_socket
+[PASS] open_tcp_socket::valid_socket: (0.00s)
+[====] Running 4 tests from socket_address:
+[RUN ] socket_address::addr_byte_order
+[PASS] socket_address::addr_byte_order: (0.00s)
+[RUN ] socket_address::correct_proto_family
+[PASS] socket_address::correct_proto_family: (0.00s)
+[RUN ] socket_address::port_byte_order
+[PASS] socket_address::port_byte_order: (0.00s)
+[RUN ] socket_address::zero_addr_and_port
+[PASS] socket_address::zero_addr_and_port: (0.00s)
+[====] Synthesis: Tested: 7 | Passing: 7 | Failing: 0 | Crashing: 0 
+<end of output>
+Test time =   0.13 sec
+----------------------------------------------------------
+Test Passed.
+"test_util" end time: Apr 06 04:13 UTC
+"test_util" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/2 Testing: test_server
+2/2 Test: test_server
+Command: "/workspaces/softsys-2025-01/assignments/08-networking/build/test/test_server" "--verbose" "-j1"
+Directory: /workspaces/softsys-2025-01/assignments/08-networking/build/test
+"test_server" start time: Apr 06 04:13 UTC
+Output:
+----------------------------------------------------------
+[----] Criterion v2.4.1
+[====] Running 1 test from listen_for_connections:
+[RUN ] listen_for_connections::socket_listening
+[PASS] listen_for_connections::socket_listening: (0.00s)
+[====] Running 3 tests from make_echo_server:
+[RUN ] make_echo_server::addr_set_correctly
+[PASS] make_echo_server::addr_set_correctly: (0.00s)
+[RUN ] make_echo_server::backlog_set_correctly
+[PASS] make_echo_server::backlog_set_correctly: (0.00s)
+[RUN ] make_echo_server::listener_set_correctly
+[PASS] make_echo_server::listener_set_correctly: (0.00s)
+[====] Synthesis: Tested: 4 | Passing: 4 | Failing: 0 | Crashing: 0 
+<end of output>
+Test time =   0.08 sec
+----------------------------------------------------------
+Test Passed.
+"test_server" end time: Apr 06 04:13 UTC
+"test_server" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Apr 06 04:13 UTC

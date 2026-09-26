@@ -1,0 +1,3 @@
+src/CMakeFiles/run_greet.dir/run_greet.c.o: \
+  /Users/enriccogemha/Developer/softsys-2025-01/assignments/00-intro-to-assignments/src/run_greet.c \
+  /Users/enriccogemha/Developer/softsys-2025-01/assignments/00-intro-to-assignments/src/greet.h

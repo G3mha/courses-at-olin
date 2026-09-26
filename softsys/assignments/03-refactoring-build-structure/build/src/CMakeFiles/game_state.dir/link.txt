@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc libgame_state.a CMakeFiles/game_state.dir/game_state.c.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib libgame_state.a

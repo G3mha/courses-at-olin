@@ -1,0 +1,42 @@
+---
+- name: Set up machine for SoftSys (macOS)
+  hosts: 127.0.0.1
+  connection: local
+  vars:
+  tasks:
+    - name: Install toolchain packages
+      community.general.homebrew:
+        name:
+          - gcc
+          - make
+          - cmake
+          - clang-format
+          - criterion
+    - name: Install VSCode
+      community.general.homebrew_cask:
+        name: visual-studio-code
+        state: present
+    - name: Install Prettier
+      community.general.homebrew:
+        name: prettier
+    - name: Install VSCode extensions
+      ansible.builtin.shell: code --install-extension {{ item }}
+      loop:
+        - esbenp.prettier-vscode
+        - ms-vscode-remote.remote-containers
+        - ms-vscode.cpptools
+        - ms-vscode.cpptools-extension-pack
+        - ms-vscode.cpptools-themes
+        - xaver.clang-format
+        - twxs.cmake
+        - ms-vscode.cmake-tools
+        - ms-azuretools.vscode-docker
+        - ms-vscode-remote.remote-ssh
+        - ms-vscode-remote.remote-ssh-edit
+        - ms-vscode.remote-explorer
+    - name: Install Docker
+      community.general.homebrew_cask:
+        name: docker
+    - name: Install Act
+      community.general.homebrew:
+        name: act

@@ -1,0 +1,123 @@
+Start testing: Jan 30 14:49 EST
+----------------------------------------------------------
+1/4 Testing: test_string_utils
+1/4 Test: test_string_utils
+Command: "/Users/enriccogemha/Developer/softsys-2025-01/assignments/00-intro-to-assignments/build/test/test_string_utils" "--verbose" "-j1"
+Directory: /Users/enriccogemha/Developer/softsys-2025-01/assignments/00-intro-to-assignments/build/test
+"test_string_utils" start time: Jan 30 14:49 EST
+Output:
+----------------------------------------------------------
+[----] Criterion v2.4.2
+[====] Running 4 tests from count_digits:
+[RUN ] count_digits::count_all_digits
+[PASS] count_digits::count_all_digits: (0.00s)
+[RUN ] count_digits::empty_string_no_digits
+[PASS] count_digits::empty_string_no_digits: (0.00s)
+[RUN ] count_digits::nonempty_string_no_digits
+[PASS] count_digits::nonempty_string_no_digits: (0.00s)
+[RUN ] count_digits::nonempty_string_with_digits
+[PASS] count_digits::nonempty_string_with_digits: (0.00s)
+[====] Running 4 tests from count_vowels:
+[RUN ] count_vowels::empty_string_no_vowels
+[PASS] count_vowels::empty_string_no_vowels: (0.00s)
+[RUN ] count_vowels::nonempty_string_no_vowels
+[PASS] count_vowels::nonempty_string_no_vowels: (0.00s)
+[RUN ] count_vowels::nonempty_string_with_vowels
+[PASS] count_vowels::nonempty_string_with_vowels: (0.00s)
+[RUN ] count_vowels::vowel_cases_counted
+[PASS] count_vowels::vowel_cases_counted: (0.00s)
+[====] Running 5 tests from string_length:
+[RUN ] string_length::empty_string_zero_length
+[PASS] string_length::empty_string_zero_length: (0.00s)
+[RUN ] string_length::nonempty_string_length_match
+[PASS] string_length::nonempty_string_length_match: (0.00s)
+[RUN ] string_length::nonempty_string_positive_length
+[PASS] string_length::nonempty_string_positive_length: (0.00s)
+[RUN ] string_length::nonempty_string_with_early_sentinel
+[PASS] string_length::nonempty_string_with_early_sentinel: (0.00s)
+[RUN ] string_length::nonempty_string_with_initial_sentinel
+[PASS] string_length::nonempty_string_with_initial_sentinel: (0.00s)
+[====] Synthesis: Tested: 13 | Passing: 13 | Failing: 0 | Crashing: 0 
+<end of output>
+Test time =   0.67 sec
+----------------------------------------------------------
+Test Passed.
+"test_string_utils" end time: Jan 30 14:49 EST
+"test_string_utils" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/4 Testing: test_absolute
+2/4 Test: test_absolute
+Command: "/Users/enriccogemha/Developer/softsys-2025-01/assignments/00-intro-to-assignments/build/test/test_absolute" "--verbose" "-j1"
+Directory: /Users/enriccogemha/Developer/softsys-2025-01/assignments/00-intro-to-assignments/build/test
+"test_absolute" start time: Jan 30 14:49 EST
+Output:
+----------------------------------------------------------
+[----] Criterion v2.4.2
+[====] Running 3 tests from absolute_value:
+[RUN ] absolute_value::absolute_negative
+[PASS] absolute_value::absolute_negative: (0.00s)
+[RUN ] absolute_value::absolute_positive
+[PASS] absolute_value::absolute_positive: (0.00s)
+[RUN ] absolute_value::absolute_zero
+[PASS] absolute_value::absolute_zero: (0.00s)
+[====] Synthesis: Tested: 3 | Passing: 3 | Failing: 0 | Crashing: 0 
+<end of output>
+Test time =   0.13 sec
+----------------------------------------------------------
+Test Passed.
+"test_absolute" end time: Jan 30 14:49 EST
+"test_absolute" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/4 Testing: test_greet
+3/4 Test: test_greet
+Command: "/Users/enriccogemha/Developer/softsys-2025-01/assignments/00-intro-to-assignments/build/test/test_greet" "--verbose" "-j1"
+Directory: /Users/enriccogemha/Developer/softsys-2025-01/assignments/00-intro-to-assignments/build/test
+"test_greet" start time: Jan 30 14:49 EST
+Output:
+----------------------------------------------------------
+[----] Criterion v2.4.2
+[====] Running 2 tests from greet:
+[RUN ] greet::greet_empty
+[PASS] greet::greet_empty: (0.00s)
+[RUN ] greet::greet_nonempty
+[PASS] greet::greet_nonempty: (0.00s)
+[====] Synthesis: Tested: 2 | Passing: 2 | Failing: 0 | Crashing: 0 
+<end of output>
+Test time =   0.11 sec
+----------------------------------------------------------
+Test Passed.
+"test_greet" end time: Jan 30 14:49 EST
+"test_greet" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/4 Testing: test_paths
+4/4 Test: test_paths
+Command: "/Users/enriccogemha/Developer/softsys-2025-01/assignments/00-intro-to-assignments/build/test/test_paths" "--verbose" "-j1"
+Directory: /Users/enriccogemha/Developer/softsys-2025-01/assignments/00-intro-to-assignments/build/test
+"test_paths" start time: Jan 30 14:49 EST
+Output:
+----------------------------------------------------------
+[----] Criterion v2.4.2
+[====] Running 5 tests from select_path:
+[RUN ] select_path::left_path
+[PASS] select_path::left_path: (0.00s)
+[RUN ] select_path::negative_default
+[PASS] select_path::negative_default: (0.00s)
+[RUN ] select_path::right_path
+[PASS] select_path::right_path: (0.00s)
+[RUN ] select_path::straight_path
+[PASS] select_path::straight_path: (0.00s)
+[RUN ] select_path::zero_default
+[PASS] select_path::zero_default: (0.00s)
+[====] Synthesis: Tested: 5 | Passing: 5 | Failing: 0 | Crashing: 0 
+<end of output>
+Test time =   0.14 sec
+----------------------------------------------------------
+Test Passed.
+"test_paths" end time: Jan 30 14:49 EST
+"test_paths" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Jan 30 14:49 EST

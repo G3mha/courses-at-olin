@@ -1,0 +1,7 @@
+test_count 1 0.154381
+test_startswith 1 0.13377
+test_endswith 1 0.137659
+test_strip 1 0.130969
+test_split 0 0
+---
+test_split

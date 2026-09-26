@@ -1,0 +1,41 @@
+Start testing: Feb 04 23:08 EST
+----------------------------------------------------------
+1/2 Testing: test_array_sort
+1/2 Test: test_array_sort
+Command: "/Users/enriccogemha/Developer/softsys-2025-01/assignments/01-compilation-memory/build/test/test_array_sort" "--verbose" "-j1"
+Directory: /Users/enriccogemha/Developer/softsys-2025-01/assignments/01-compilation-memory/build/test
+"test_array_sort" start time: Feb 04 23:08 EST
+Output:
+----------------------------------------------------------
+[----] Criterion v2.4.2
+[====] Running 2 tests from sort_copy:
+[RUN ] sort_copy::original_array_unchanged
+[PASS] sort_copy::original_array_unchanged: (0.00s)
+[RUN ] sort_copy::sorted_array_in_order
+[PASS] sort_copy::sorted_array_in_order: (0.00s)
+[====] Running 4 tests from sort_inplace:
+[RUN ] sort_inplace::singleton_array_unchanged
+[PASS] sort_inplace::singleton_array_unchanged: (0.00s)
+[RUN ] sort_inplace::sort_negative_values
+[PASS] sort_inplace::sort_negative_values: (0.00s)
+[RUN ] sort_inplace::sorted_array_unchanged
+[PASS] sort_inplace::sorted_array_unchanged: (0.00s)
+[RUN ] sort_inplace::unsorted_array_changed
+[PASS] sort_inplace::unsorted_array_changed: (0.00s)
+[====] Running 3 tests from swap:
+[RUN ] swap::swap_same_location
+[PASS] swap::swap_same_location: (0.00s)
+[RUN ] swap::swap_same_value
+[PASS] swap::swap_same_value: (0.00s)
+[RUN ] swap::swap_unequal
+[PASS] swap::swap_unequal: (0.00s)
+[====] Synthesis: Tested: 9 | Passing: 9 | Failing: 0 | Crashing: 0 
+<end of output>
+Test time =   0.19 sec
+----------------------------------------------------------
+Test Passed.
+"test_array_sort" end time: Feb 04 23:08 EST
+"test_array_sort" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Feb 04 23:08 EST

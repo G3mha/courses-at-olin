@@ -1,0 +1,1 @@
+/usr/bin/cc -Wall -Wextra -pedantic -Wconversion -Wdouble-promotion -Wduplicated-branches -Wduplicated-cond -Wimplicit-fallthrough -Wlogical-op -Wmisleading-indentation -Wnull-dereference -Wshadow -Wsign-conversion -Wunreachable-code -Wunused -g CMakeFiles/run_weave.dir/run_weave.c.o -o run_weave  libweave.a -lpthread 
